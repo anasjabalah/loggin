@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 12px rgb(176, 176, 179);
+}
+
+body{
+    background-image: url(Capture.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.logo{
+    width: 40%;
+    height: 100%;
+    padding: 0 0 0 50px;
+}
+
+.logo img{
+    width: 37%;
+    height: 100%;
+}
+
+nav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 10px;
+}
+
+nav ul li a{
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    
+}
+
+nav ul li a:hover{
+    color: #9C64F2;
+}
+
+.icon{
+    margin-left: 5px;
+    transition: transform 0.5s;
+}
+
+nav ul li a:hover .icon{
+    transform: rotate(90deg);
+}
+
+nav ul ul:hover .icon{
+    transform: rotate(90deg);
+}
+
+nav ul ul{
+    border-top: 2px solid #9C64F2 ;
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+nav ul ul li{
+    padding: 10px;
+    text-align: center;
+}
+nav ul ul li a{
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li:hover > ul{
+    top: 48px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.section{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    margin: 20px;
+    width: 50%;
+    left: 20px;
+    position: relative;
+    padding: 40px 10px;
+}
+
+/* .section_all{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+} */
+.add{
+    opacity: 1;
+    visibility: visible;
+    animation-name: example;
+    animation-duration: 0.5s;
+    left: 26%;
+    
+}
+
+@keyframes example {
+  0% {left: 20px;}
+  100%{left: 26%;}
+}
+
+
+
+
+.section_1{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    margin: 20px;
+    width: 50%;
+    top: 107px;
+    left: 40%;
+    position: absolute;
+    padding: 40px 10px;
+}
+
+
+.btn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-weight: 900;
+    width: 30px;
+    font-size: 20px;
+    height: 30px;
+    cursor: pointer;
+    background: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.btn:hover{
+    color: #888;
+}
+
+.forms{
+    position: relative;
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px auto;
+}
+
+
+
+form{
+    width: 100%;
+    
+}
+
+h1{
+    color: #9C64F2;
+    text-align: center ;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: 'Nunito', sans-serif;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin:5px 0 10px;
+    background-color: #f1f1f1;
+    border-bottom:3px solid #9C64F2 ;
+    outline: none;
+}
+label{
+    font-size: 18px;
+    color: #333;
+}
+
+input:last-child{
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+    font-size: 17px;
+    border: none;
+}
+
+
+.add_1{
+    opacity: 1;
+    visibility: visible;
+    animation-name: example1;
+    animation-duration: 0.5s;
+    left: 26%;
+    
+}
+
+@keyframes example1 {
+  0% {left: 40%;}
+  100%{left: 26%;}
+}
+
+
